@@ -2,36 +2,36 @@
   "AAPL": {
     "symbol": "AAPL",
     "name": "Apple Inc.",
-    "price": 175.09649832195365,
-    "change": -0.803570949343825,
-    "changePercent": -0.45893033672568484
+    "price": 175.1198432685675,
+    "change": 0.962781757350009,
+    "changePercent": 0.5497845015047589
   },
   "GOOGL": {
     "symbol": "GOOGL",
     "name": "Alphabet Inc.",
-    "price": 151.95224795984495,
-    "change": 0.23919523375734109,
-    "changePercent": 0.15741473849110219
+    "price": 154.36767656088517,
+    "change": 0.8708296421472923,
+    "changePercent": 0.5641269348274622
   },
   "MSFT": {
     "symbol": "MSFT",
     "name": "Microsoft Corporation",
-    "price": 389.9045013772053,
-    "change": -0.07065273699846353,
-    "changePercent": -0.018120523550999468
+    "price": 393.79577121338565,
+    "change": 0.9286348545819805,
+    "changePercent": 0.2358163602723865
   },
   "TSLA": {
     "symbol": "TSLA",
     "name": "Tesla Inc.",
-    "price": 245.96638645436437,
-    "change": -0.7575996001845744,
-    "changePercent": -0.3080094036853838
+    "price": 243.02589458121057,
+    "change": -0.0823422848512303,
+    "changePercent": -0.033882103383725826
   },
   "AMZN": {
     "symbol": "AMZN",
     "name": "Amazon.com Inc.",
-    "price": 165.86115502493377,
-    "change": 0.80399884200409,
-    "changePercent": 0.484742097619678
+    "price": 167.87911943386834,
+    "change": 0.5795255392073706,
+    "changePercent": 0.3452040618045175
   }
 }
