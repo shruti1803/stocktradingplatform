@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Trading Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stock Trading Platform</h1>
+            <nav>
+                <button class="nav-btn active" data-tab="dashboard">Dashboard</button>
+                <button class="nav-btn" data-tab="trade">Trade</button>
+                <button class="nav-btn" data-tab="orders">Orders</button>
+                <button class="nav-btn" data-tab="trades">Past Trades</button>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Dashboard Tab -->
+            <div id="dashboard" class="tab-content active">
+                <div class="section">
+                    <h2>Live Stock Prices</h2>
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search stocks...">
+                    </div>
+                    <div id="stockList" class="stock-list"></div>
+                </div>
+            </div>
+
+            <!-- Trade Tab -->
+            <div id="trade" class="tab-content">
+                <div class="section">
+                    <h2>Place Order</h2>
+                    <form id="orderForm" class="order-form">
+                        <div class="form-group">
+                            <label for="symbol">Stock Symbol</label>
+                            <input type="text" id="symbol" required placeholder="e.g., AAPL">
+                        </div>
+                        <div class="form-group">
+                            <label for="orderType">Order Type</label>
+                            <select id="orderType" required>
+                                <option value="market">Market Order</option>
+                                <option value="limit">Limit Order</option>
+                                <option value="stop">Stop Order</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Buy/Sell</label>
+                            <select id="type" required>
+                                <option value="buy">Buy</option>
+                                <option value="sell">Sell</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" id="quantity" required min="1">
+                        </div>
+                        <div class="form-group" id="priceGroup" style="display: none;">
+                            <label for="price">Price</label>
+                            <input type="number" id="price" step="0.01" min="0.01">
+                        </div>
+                        <button type="submit">Place Order</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Orders Tab -->
+            <div id="orders" class="tab-content">
+                <div class="section">
+                    <h2>Order Status</h2>
+                    <div id="ordersList" class="orders-list"></div>
+                </div>
+            </div>
+
+            <!-- Trades Tab -->
+            <div id="trades" class="tab-content">
+                <div class="section">
+                    <h2>Past Trades</h2>
+                    <div id="tradesList" class="trades-list"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
